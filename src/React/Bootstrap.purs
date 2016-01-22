@@ -96,6 +96,12 @@ trigger = RP.unsafeMkProps "trigger"
 rootClose :: RP.Props
 rootClose = RP.unsafeMkProps "rootClose" unit
 
+labelClassName :: String -> RP.Props
+labelClassName = RP.unsafeMkProps "labelClassName"
+
+wrapperClassName :: String -> RP.Props
+wrapperClassName = RP.unsafeMkProps "wrapperClassName"
+
 -- not really boostrap props, operate on normal HTML
 valueInt :: Int -> RP.Props
 valueInt = RP.unsafeMkProps "value"
