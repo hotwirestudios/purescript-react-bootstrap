@@ -105,6 +105,12 @@ labelClassName = RP.unsafeMkProps "labelClassName"
 wrapperClassName :: String -> RP.Props
 wrapperClassName = RP.unsafeMkProps "wrapperClassName"
 
+expanded :: Boolean -> RP.Props
+expanded e = RP.unsafeMkProps "expanded" e
+
+collapsible :: Boolean -> RP.Props
+collapsible e = RP.unsafeMkProps "collapsible" e
+
 -- not really boostrap props, operate on normal HTML
 valueInt :: Int -> RP.Props
 valueInt = RP.unsafeMkProps "value"
