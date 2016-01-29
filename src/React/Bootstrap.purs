@@ -84,8 +84,11 @@ overlay = RP.unsafeMkProps "overlay"
 show :: Boolean -> RP.Props
 show = RP.unsafeMkProps "show"
 
-header :: String -> RP.Props
+header :: R.ReactElement -> RP.Props
 header = RP.unsafeMkProps "header"
+
+footer :: R.ReactElement -> RP.Props
+footer = RP.unsafeMkProps "footer"
 
 placement :: String -> RP.Props
 placement = RP.unsafeMkProps "placement"
