@@ -33,6 +33,9 @@ tab = bootstrap "Tab"
 eventKey :: Int -> RP.Props
 eventKey = RP.unsafeMkProps "eventKey"
 
+defaultEventKey :: Int -> RP.Props
+defaultEventKey = RP.unsafeMkProps "defaultEventKey"
+
 table :: PropComponent
 table = bootstrap "Table"
 
