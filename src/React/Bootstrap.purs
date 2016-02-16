@@ -1,33 +1,30 @@
 module React.Bootstrap where
 
 import Prelude (unit)
-import qualified React as R
+import React
 import qualified React.DOM.Props as RP
 
-foreign import bootstrap :: String -> PropComponent
+foreign import bootstrap :: String -> Array RP.Props -> Array ReactElement -> ReactElement
 
-type PropComponent = Array RP.Props -> Component
-type Component = Array R.ReactElement -> R.ReactElement
-
-button :: PropComponent
+button :: Array RP.Props -> Array ReactElement -> ReactElement
 button = bootstrap "Button"
 
-buttonToolbar :: PropComponent
+buttonToolbar :: Array RP.Props -> Array ReactElement -> ReactElement
 buttonToolbar = bootstrap "ButtonToolbar"
 
-buttonToolbar' :: Component
+buttonToolbar' :: Array ReactElement -> ReactElement
 buttonToolbar' = buttonToolbar []
 
-panel :: PropComponent
+panel :: Array RP.Props -> Array ReactElement -> ReactElement
 panel = bootstrap "Panel"
 
-panel' :: Component
+panel' :: Array ReactElement -> ReactElement
 panel' = panel []
 
-tabs :: PropComponent
+tabs :: Array RP.Props -> Array ReactElement -> ReactElement
 tabs = bootstrap "Tabs"
 
-tab :: PropComponent
+tab :: Array RP.Props -> Array ReactElement -> ReactElement
 tab = bootstrap "Tab"
 
 eventKey :: Int -> RP.Props
@@ -36,28 +33,28 @@ eventKey = RP.unsafeMkProps "eventKey"
 defaultActiveKey :: Int -> RP.Props
 defaultActiveKey = RP.unsafeMkProps "defaultActiveKey"
 
-table :: PropComponent
+table :: Array RP.Props -> Array ReactElement -> ReactElement
 table = bootstrap "Table"
 
-modal :: PropComponent
+modal :: Array RP.Props -> Array ReactElement -> ReactElement
 modal = bootstrap "Modal"
 
-modalHeader' :: Component
+modalHeader' :: Array ReactElement -> ReactElement
 modalHeader' = bootstrap "ModalHeader" []
 
-modalFooter' :: Component
+modalFooter' :: Array ReactElement -> ReactElement
 modalFooter' = bootstrap "ModalFooter" []
 
-modalBody' :: Component
+modalBody' :: Array ReactElement -> ReactElement
 modalBody' = bootstrap "ModalBody" []
 
-input :: PropComponent
+input :: Array RP.Props -> Array ReactElement -> ReactElement
 input = bootstrap "Input"
 
-popover :: PropComponent
+popover :: Array RP.Props -> Array ReactElement -> ReactElement
 popover = bootstrap "Popover"
 
-overlayTrigger :: PropComponent
+overlayTrigger :: Array RP.Props -> Array ReactElement -> ReactElement
 overlayTrigger = bootstrap "OverlayTrigger"
 
 striped :: Boolean -> RP.Props
@@ -75,22 +72,22 @@ hover = RP.unsafeMkProps "hover"
 bsStyle :: String -> RP.Props
 bsStyle = RP.unsafeMkProps "bsStyle"
 
-buttonBefore :: R.ReactElement -> RP.Props
+buttonBefore :: ReactElement -> RP.Props
 buttonBefore = RP.unsafeMkProps "buttonBefore"
 
-buttonAfter :: R.ReactElement -> RP.Props
+buttonAfter :: ReactElement -> RP.Props
 buttonAfter = RP.unsafeMkProps "buttonAfter"
 
-overlay :: R.ReactElement -> RP.Props
+overlay :: ReactElement -> RP.Props
 overlay = RP.unsafeMkProps "overlay"
 
 show :: Boolean -> RP.Props
 show = RP.unsafeMkProps "show"
 
-header :: R.ReactElement -> RP.Props
+header :: ReactElement -> RP.Props
 header = RP.unsafeMkProps "header"
 
-footer :: R.ReactElement -> RP.Props
+footer :: ReactElement -> RP.Props
 footer = RP.unsafeMkProps "footer"
 
 placement :: String -> RP.Props
