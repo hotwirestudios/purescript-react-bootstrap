@@ -1,6 +1,9 @@
 {
   "name": "purescript-react-bootstrap",
-  "version": "0.0.1",
+  "authors": [
+    "Spencer Janssen <spencerjanssen@gmail.com>"
+  ],
+  "license": "MIT",
   "moduleType": [
     "node"
   ],
