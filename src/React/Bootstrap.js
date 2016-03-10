@@ -2,6 +2,8 @@
 
 "use strict";
 
+var bootstrap = require('react-bootstrap');
+
 
 // copied from purescript-react/src/React/DOM.js
 function mkProps(props) {
@@ -21,7 +23,7 @@ function mkProps(props) {
 };
 
 exports.bootstrap = function(n) {
-        var elt = window.ReactBootstrap[n];
+        var elt = bootstrap[n];
         return function(props){
                 return function(children){
                         // bootstrap Overlay components are picky about how child elements are passed
