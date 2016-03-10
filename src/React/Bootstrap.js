@@ -2,6 +2,7 @@
 
 "use strict";
 
+var react = require('react');
 var bootstrap = require('react-bootstrap');
 
 
@@ -28,11 +29,11 @@ exports.bootstrap = function(n) {
                 return function(children){
                         // bootstrap Overlay components are picky about how child elements are passed
                         if(children.length == 0){
-                                return React.createElement(elt, props.length > 0 ? mkProps(props) : null);
+                                return react.createElement(elt, props.length > 0 ? mkProps(props) : null);
                         } else if(children.length == 1){
-                                return React.createElement(elt, props.length > 0 ? mkProps(props) : null, children[0]);
+                                return react.createElement(elt, props.length > 0 ? mkProps(props) : null, children[0]);
                         } else {
-                                return React.createElement(elt, props.length > 0 ? mkProps(props) : null, children);
+                                return react.createElement(elt, props.length > 0 ? mkProps(props) : null, children);
                         }
                 }
         }
