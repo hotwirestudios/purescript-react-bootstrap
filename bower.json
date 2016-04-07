@@ -16,5 +16,6 @@
   "dependencies": {
     "purescript-react": "~0.7.0",
     "purescript-prelude": "~0.1.3"
-  }
+  },
+  "version": "0.0.1"
 }
