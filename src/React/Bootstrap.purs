@@ -39,6 +39,9 @@ table = bootstrap "Table"
 modal :: Array RP.Props -> Array ReactElement -> ReactElement
 modal = bootstrap "Modal"
 
+alert :: Array RP.Props -> Array ReactElement -> ReactElement
+alert = bootstrap "Alert"
+
 modalHeader' :: Array ReactElement -> ReactElement
 modalHeader' = bootstrap "ModalHeader" []
 
