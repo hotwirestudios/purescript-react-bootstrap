@@ -60,6 +60,9 @@ popover = bootstrap "Popover"
 overlayTrigger :: Array RP.Props -> Array ReactElement -> ReactElement
 overlayTrigger = bootstrap "OverlayTrigger"
 
+progressBar :: Array RP.Props -> Array ReactElement -> ReactElement
+progressBar = bootstrap "ProgressBar"
+
 striped :: Boolean -> RP.Props
 striped = RP.unsafeMkProps "striped"
 
@@ -113,6 +116,12 @@ expanded e = RP.unsafeMkProps "expanded" e
 
 collapsible :: Boolean -> RP.Props
 collapsible e = RP.unsafeMkProps "collapsible" e
+
+now :: Int -> RP.Props
+now = RP.unsafeMkProps "now"
+
+active :: Boolean -> RP.Props
+active = RP.unsafeMkProps "active"
 
 -- not really boostrap props, operate on normal HTML
 valueInt :: Int -> RP.Props
