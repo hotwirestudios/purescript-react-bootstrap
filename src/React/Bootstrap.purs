@@ -60,6 +60,9 @@ popover = bootstrap "Popover"
 overlayTrigger :: Array RP.Props -> Array ReactElement -> ReactElement
 overlayTrigger = bootstrap "OverlayTrigger"
 
+overlayElem :: Array RP.Props -> Array ReactElement -> ReactElement
+overlayElem = bootstrap "Overlay"
+
 progressBar :: Array RP.Props -> Array ReactElement -> ReactElement
 progressBar = bootstrap "ProgressBar"
 
