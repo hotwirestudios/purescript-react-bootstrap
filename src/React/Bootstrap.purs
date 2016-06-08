@@ -57,6 +57,9 @@ input = bootstrap "Input"
 popover :: Array RP.Props -> Array ReactElement -> ReactElement
 popover = bootstrap "Popover"
 
+tooltip :: Array RP.Props -> Array ReactElement -> ReactElement
+tooltip = bootstrap "Tooltip"
+
 overlayTrigger :: Array RP.Props -> Array ReactElement -> ReactElement
 overlayTrigger = bootstrap "OverlayTrigger"
 
