@@ -1,6 +1,6 @@
 module React.Bootstrap where
 
-import Prelude (unit)
+import Prelude (unit, (<<<))
 import React
 import qualified React.DOM.Props as RP
 
@@ -133,7 +133,7 @@ onSelectStr
     :: forall eff props state result.
     (String -> EventHandlerContext eff props state result)
     -> RP.Props
-onSelectStr = RP.unsafeMkProps "onSelect"
+onSelectStr = RP.unsafeMkProps "onSelect" <<< handle
 
 activeKeyStr :: String -> RP.Props
 activeKeyStr = RP.unsafeMkProps "activeKey"
