@@ -141,6 +141,9 @@ activeKeyStr = RP.unsafeMkProps "activeKey"
 eventKeyStr :: String -> RP.Props
 eventKeyStr = RP.unsafeMkProps "eventKey"
 
+animation :: Boolean -> RP.Props
+animation = RP.unsafeMkProps "animation"
+
 -- not really boostrap props, operate on normal HTML
 valueInt :: Int -> RP.Props
 valueInt = RP.unsafeMkProps "value"
