@@ -129,6 +129,15 @@ now = RP.unsafeMkProps "now"
 active :: Boolean -> RP.Props
 active = RP.unsafeMkProps "active"
 
+onSelectStr
+    :: forall eff props state result.
+    (String -> EventHandlerContext eff props state result)
+    -> RP.Props
+onSelectStr = RP.unsafeMkProps "onSelect"
+
+activeKeyStr :: String -> RP.Props
+activeKeyStr = RP.unsafeMkProps "activeKey"
+
 -- not really boostrap props, operate on normal HTML
 valueInt :: Int -> RP.Props
 valueInt = RP.unsafeMkProps "value"
