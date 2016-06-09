@@ -138,6 +138,9 @@ onSelectStr = RP.unsafeMkProps "onSelect"
 activeKeyStr :: String -> RP.Props
 activeKeyStr = RP.unsafeMkProps "activeKey"
 
+eventKeyStr :: String -> RP.Props
+eventKeyStr = RP.unsafeMkProps "eventKey"
+
 -- not really boostrap props, operate on normal HTML
 valueInt :: Int -> RP.Props
 valueInt = RP.unsafeMkProps "value"
