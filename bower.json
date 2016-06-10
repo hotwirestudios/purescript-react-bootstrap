@@ -1,9 +1,12 @@
 {
   "name": "purescript-react-bootstrap",
+  "homepage": "https://github.com/spencerjanssen/purescript-react-bootstrap",
+  "description": "PureScript bindings to React-Bootstrap",
   "authors": [
     "Spencer Janssen <spencerjanssen@gmail.com>"
   ],
   "license": "MIT",
+  "main": "",
   "moduleType": [
     "node"
   ],
@@ -13,9 +16,12 @@
     "bower_components",
     "output"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/purescript-contrib/purescript-react.git"
+  },
   "dependencies": {
     "purescript-react": "~0.7.0",
     "purescript-prelude": "~0.1.3"
-  },
-  "version": "0.0.1"
+  }
 }
